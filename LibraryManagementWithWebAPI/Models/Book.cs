@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagementWithWebAPI.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,7 +14,5 @@ namespace LibraryManagementWithWebAPI
         public string BarCode { get; set; }
         public int CopyCount { get; set; }
 
-        
-        
     }
 }

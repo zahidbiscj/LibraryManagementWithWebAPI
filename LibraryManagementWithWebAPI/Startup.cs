@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LibraryManagementWithWebAPI.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,6 +12,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using LibraryManagementWithWebAPI.Services;
+
 
 namespace LibraryManagementWithWebAPI
 {
@@ -29,6 +32,15 @@ namespace LibraryManagementWithWebAPI
             services
                 .AddTransient<IMembershipService, MembershipService>()
                 .AddTransient<IStudentRepository, StudentRepository>();
+            services
+                .AddTransient<IBookService, BookService>()
+                .AddTransient<IBookRepository, BookRepository>();
+            services
+                .AddTransient<IManageLibraryServices, ManageLibraryServices>()
+                .AddTransient<IBookIssueRepository, BookIssueRepository>();
+            services
+                .AddTransient<IReportingService,ReportingService>()
+                .AddTransient<IReturnBookRepository,ReturnBookRepository>();
 
             services.AddDbContext<LibraryContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

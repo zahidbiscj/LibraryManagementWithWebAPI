@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LibraryManagementWithWebAPI;
+using LibraryManagementWithWebAPI.Services;
+
 
 namespace LibraryManagementWithWebAPI.Controllers
 {
@@ -13,93 +15,84 @@ namespace LibraryManagementWithWebAPI.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly LibraryContext _context;
+        private IBookService _BookService;
 
-        public BooksController(LibraryContext context)
+        public BooksController(IBookService bookService)
         {
-            _context = context;
+            _BookService = bookService;
         }
 
-        // GET: api/Books
+        // GET api/Books
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Book>>> GetBooks()
+        public ActionResult<IList<Book>> Get()
         {
-            return await _context.Books.ToListAsync();
+            return _BookService.ShowAllBooks();
         }
 
-        // GET: api/Books/5
+        // GET api/Books/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Book>> GetBook(int id)
+        public ActionResult<Book> Get(int id)
         {
-            var book = await _context.Books.FindAsync(id);
-
-            if (book == null)
-            {
-                return NotFound();
-            }
-
-            return book;
+            return _BookService.GetBooksDetails(id);
         }
 
-        // PUT: api/Books/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutBook(int id, Book book)
+        // POST api/Books
+        [HttpPost]
+        public ActionResult Post([FromBody] Book books)
         {
-            if (id != book.Id)
+            try
             {
-                return BadRequest();
+                _BookService.EntryBook(books);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
             }
 
-            _context.Entry(book).State = EntityState.Modified;
+        }
+
+
+
+        // PUT api/Students/UpdateStudent
+        [HttpPut("/api/Students/UpdateStudent/{id}")]
+        public ActionResult Put(int id, [FromBody] Book book)
+        {
 
             try
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!BookExists(id))
+                bool IsUpdated = _BookService.UpdateBookInfo(id,book);
+                if (IsUpdated)
                 {
-                    return NotFound();
+                    return Ok("Updated Successfully");
                 }
                 else
                 {
-                    throw;
+                    return NotFound("ID = " + id + " Not found");
                 }
+
             }
-
-            return NoContent();
-        }
-
-        // POST: api/Books
-        [HttpPost]
-        public async Task<ActionResult<Book>> PostBook(Book book)
-        {
-            _context.Books.Add(book);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetBook", new { id = book.Id }, book);
-        }
-
-        // DELETE: api/Books/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<Book>> DeleteBook(int id)
-        {
-            var book = await _context.Books.FindAsync(id);
-            if (book == null)
+            catch (Exception e)
             {
-                return NotFound();
+                return BadRequest(e.Message);
             }
 
-            _context.Books.Remove(book);
-            await _context.SaveChangesAsync();
-
-            return book;
         }
 
-        private bool BookExists(int id)
+        // DELETE api/Books/DeleteBooks/5
+        [HttpDelete("/api/Books/DeleteBooks/{Barcode}")]
+        public ActionResult Delete(string Barcode)
         {
-            return _context.Books.Any(e => e.Id == id);
+            try
+            {
+                _BookService.RemoveBook(Barcode);
+                return Ok("Deleted Successfully");
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+
         }
     }
 }

@@ -37,14 +37,10 @@ namespace LibraryManagementWithWebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BarCode")
-                        .IsUnique()
-                        .HasFilter("[BarCode] IS NOT NULL");
-
                     b.ToTable("Books");
                 });
 
-            modelBuilder.Entity("LibraryManagementWithWebAPI.IssueBook", b =>
+            modelBuilder.Entity("LibraryManagementWithWebAPI.Models.IssueBook", b =>
                 {
                     b.Property<int>("StudentId");
 
@@ -58,24 +54,24 @@ namespace LibraryManagementWithWebAPI.Migrations
 
                     b.HasIndex("bookId");
 
-                    b.ToTable("IssueBook");
+                    b.ToTable("IssueBooks");
                 });
 
-            modelBuilder.Entity("LibraryManagementWithWebAPI.ReturnBook", b =>
+            modelBuilder.Entity("LibraryManagementWithWebAPI.Models.ReturnBook", b =>
                 {
                     b.Property<int>("StudentId");
 
-                    b.Property<int>("BookId");
+                    b.Property<int>("bookId");
 
                     b.Property<string>("BookBarCode");
 
                     b.Property<DateTime>("ReturnDate");
 
-                    b.HasKey("StudentId", "BookId");
+                    b.HasKey("StudentId", "bookId");
 
-                    b.HasIndex("BookId");
+                    b.HasIndex("bookId");
 
-                    b.ToTable("ReturnBook");
+                    b.ToTable("ReturnBooks");
                 });
 
             modelBuilder.Entity("LibraryManagementWithWebAPI.Student", b =>
@@ -93,7 +89,7 @@ namespace LibraryManagementWithWebAPI.Migrations
                     b.ToTable("Students");
                 });
 
-            modelBuilder.Entity("LibraryManagementWithWebAPI.IssueBook", b =>
+            modelBuilder.Entity("LibraryManagementWithWebAPI.Models.IssueBook", b =>
                 {
                     b.HasOne("LibraryManagementWithWebAPI.Student", "Student")
                         .WithMany("BookIssues")
@@ -106,16 +102,16 @@ namespace LibraryManagementWithWebAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("LibraryManagementWithWebAPI.ReturnBook", b =>
+            modelBuilder.Entity("LibraryManagementWithWebAPI.Models.ReturnBook", b =>
                 {
-                    b.HasOne("LibraryManagementWithWebAPI.Book", "Book")
-                        .WithMany("BookReturns")
-                        .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
                     b.HasOne("LibraryManagementWithWebAPI.Student", "Student")
                         .WithMany("BookReturns")
                         .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("LibraryManagementWithWebAPI.Book", "book")
+                        .WithMany("BookReturns")
+                        .HasForeignKey("bookId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LibraryManagementWithWebAPI;
+using LibraryManagementWithWebAPI.Services;
+
 
 namespace LibraryManagementWithWebAPI.Controllers
 {
@@ -51,6 +53,12 @@ namespace LibraryManagementWithWebAPI.Controllers
            
         }
 
+
+        [HttpPost("/api/Students/ReceiveFine")]
+        public bool ReceiveFine([FromBody] string[] values)// StudentID,FineAmount 
+        {
+            return _MembershipService.ReceiveFine(int.Parse(values[0]),double.Parse(values[1]));
+        }
 
 
         // PUT api/Students/UpdateStudent
