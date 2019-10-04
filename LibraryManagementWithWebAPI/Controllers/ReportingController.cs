@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LibraryManagementWithWebAPI.Models;
 using LibraryManagementWithWebAPI.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,9 +20,9 @@ namespace LibraryManagementWithWebAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult<double> CheckFineForEachBook([FromBody] string[] values)//Id,Barcode
+        public ActionResult<double> CheckFineForEachBook([FromBody] IssueBook issueBook)//Id,Barcode
         {
-            return _reportingService.CheckLateFee(int.Parse(values[0]),values[1]);
+            return _reportingService.CheckLateFee(issueBook.StudentId,issueBook.BookBarCode);
         }
 
         [HttpGet("{id}")]

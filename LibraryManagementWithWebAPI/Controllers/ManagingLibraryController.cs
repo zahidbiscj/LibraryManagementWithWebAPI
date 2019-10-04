@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LibraryManagementWithWebAPI.Models;
 using LibraryManagementWithWebAPI.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,16 +20,16 @@ namespace LibraryManagementWithWebAPI.Controllers
         }
 
         [HttpPost("/api/ManagingLibrary/IssueBook")]
-        public void IssueBook([FromBody]string[] values)/// StudentID,Barcode 
+        public void IssueBook([FromBody] IssueBook BookIssue)/// StudentID,Barcode 
         {
-            _ManageLibraryServices.IssueBook(int.Parse(values[0]), values[1]);
+            _ManageLibraryServices.IssueBook(BookIssue.StudentId , BookIssue.BookBarCode);
 
         }
 
         [HttpPost("/api/ManagingLibrary/ReturnBook")]
-        public void ReturnBook([FromBody] string[] values)/// StudentID,Barcode 
+        public void ReturnBook([FromBody] ReturnBook BookReturn)/// StudentID,Barcode 
         {
-            _ManageLibraryServices.ReturnBook(int.Parse(values[0]), values[1]);
+            _ManageLibraryServices.ReturnBook(BookReturn.StudentId,BookReturn.BookBarCode);
         }
 
 

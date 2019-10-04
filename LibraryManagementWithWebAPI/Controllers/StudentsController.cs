@@ -22,7 +22,7 @@ namespace LibraryManagementWithWebAPI.Controllers
             _MembershipService = membership;
         }
 
-        // GET api/Student
+        // GET api/Students
         [HttpGet]
         public ActionResult<IList<Student>> Get()
         {

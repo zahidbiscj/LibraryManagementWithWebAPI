@@ -27,7 +27,8 @@ namespace LibraryManagementWithWebAPI.Repository
                 _context.Students.Add(new Student
                 {
                     Id = id,
-                    Name = name
+                    Name = name,
+                    FineAmount = 0
                 });
                 _context.SaveChanges();
             
