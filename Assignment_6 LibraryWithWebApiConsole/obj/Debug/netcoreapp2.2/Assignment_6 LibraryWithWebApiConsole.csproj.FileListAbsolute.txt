@@ -1,0 +1,19 @@
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\bin\Debug\netcoreapp2.2\LibraryWithWebApiConsole.Store.dll
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\obj\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.csprojAssemblyReference.cache
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\obj\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.csproj.CoreCompileInputs.cache
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\obj\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.RazorAssemblyInfo.cache
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\obj\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.RazorAssemblyInfo.cs
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\obj\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.AssemblyInfoInputs.cache
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\obj\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.AssemblyInfo.cs
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\obj\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.RazorTargetAssemblyInfo.cache
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\bin\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.deps.json
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\bin\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.runtimeconfig.json
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\bin\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.runtimeconfig.dev.json
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\bin\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.dll
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\bin\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.pdb
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Models.dll
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\bin\Debug\netcoreapp2.2\LibraryWithWebApiConsole.Store.pdb
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Models.pdb
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\obj\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.csproj.CopyComplete
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\obj\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.dll
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\Assignment_6 LibraryWithWebApiConsole\obj\Debug\netcoreapp2.2\Assignment_6 LibraryWithWebApiConsole.pdb

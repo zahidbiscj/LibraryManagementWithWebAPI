@@ -1,0 +1,28 @@
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Client.deps.json
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Client.runtimeconfig.json
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Client.runtimeconfig.dev.json
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Client.dll
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.csproj.CoreCompileInputs.cache
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.AssemblyInfoInputs.cache
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.AssemblyInfo.cs
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.csprojAssemblyReference.cache
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Client.pdb
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Models.dll
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Models.pdb
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.csproj.CopyComplete
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.dll
+D:\Visual Studio Project\Assignment_6 LibraryWithWebApiConsole\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.pdb
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Client.deps.json
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Client.runtimeconfig.json
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Client.runtimeconfig.dev.json
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Client.dll
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Client.pdb
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Models.dll
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\bin\Debug\netcoreapp2.2\LibraryWithWebApi.Models.pdb
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.csprojAssemblyReference.cache
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.csproj.CoreCompileInputs.cache
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.AssemblyInfoInputs.cache
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.AssemblyInfo.cs
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.csproj.CopyComplete
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.dll
+D:\Full Stack Asp net core course materials\Practiced all File\LibraryManagementWithWebAPI\LibraryWithWebApi Client\obj\Debug\netcoreapp2.2\LibraryWithWebApi.Client.pdb
